@@ -1,0 +1,285 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+
+/* Header Styles */
+.header {
+  background: linear-gradient(rgba(214, 46, 51, 0.6), rgba(214, 46, 51, 0.6)),
+    url("../image/party.jpg") no-repeat center center; /* Replace with your image URL */
+  background-size: cover;
+  color: #fff;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative; /* For positioning the navbar toggler */
+}
+
+/* Navbar Toggler Button Styles */
+.navbar-toggler {
+  background: none;
+  border: none;
+  padding: 10px;
+  font-size: 1.5rem;
+  color: #fff;
+  position: absolute;
+  left: -43%; /* Position for larger screens */
+  transform: translateY(-50%);
+}
+
+
+/* Navbar Styles */
+.navbar-collapse {
+  background-color: #000;
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: 0.3s ease;
+}
+
+.navbar-collapse.show {
+  left: 0;
+}
+
+.navbar-nav {
+  width: 100%;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.navbar-nav .nav-item {
+  padding: 15px 0;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #dc3545;
+}
+
+/* Close Button Styles */
+.close-nav {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.close-nav:hover {
+  color: #dc3545;
+}
+
+/* Accordion Styles */
+#sliderDown {
+  margin: 100px auto;
+  width: 50%;
+}
+
+#sliderDown h2 {
+  margin: 0;
+  background-color: rgba(214, 46, 51, 0.6);
+  cursor: pointer;
+  color: white;
+}
+
+#sliderDown .accordion-header .accordion-button {
+  padding-left: 0; /* Remove left padding */
+  padding-right: 0; /* Remove right padding */
+}
+
+.accordion-button {
+  background-color: #e68184 !important;
+  color: white;
+}
+
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+  box-shadow: none !important;
+  background-color: #e68184 !important;
+  color: white !important;
+}
+
+.accordion-button::after {
+  display: none !important;
+}
+
+.accordion-collapse {
+  transition: height 0.5s ease;
+}
+
+.accordion-header .accordion-button {
+  font-size: 1.5rem;
+  text-align: center;
+  display: inline-block;
+}
+
+/* Timer Section Styles */
+.timer {
+  background: linear-gradient(rgba(168, 28, 28, 0.5), rgba(245, 50, 50, 0.5)),
+    url("../image/invitation.jpg") no-repeat center center; /* Replace with your image */
+  background-size: cover;
+  color: #fff;
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.countdown {
+  display: flex;
+  margin: 50px 0;
+}
+
+.box {
+  width: 150px; /* Reduced width for smaller screens */
+  height: 100px;
+  border: 1px solid #fff;
+  color: #fff;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+
+
+
+
+/* ... footer styles ... */
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 100px 0;
+}
+
+.join-us {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-info h3 {
+  color: #dc3545;
+  margin-bottom: 15px;
+}
+
+.contact-info ul {
+  margin-bottom: 20px;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+  color: #6c757d;
+}
+
+.contact-info a {
+  color: #dc3545;
+}
+
+.social-icons li {
+  margin-right: 10px;
+}
+
+.social-box {
+  width: 40px; /* Adjust box size as needed */
+  height: 40px;
+  border: 1px solid #6C757D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.social-box a {
+  color: #6c757d;
+  font-size: 1.5rem;
+}
+
+.social-box:hover {
+  background-color: #dc3545; /* Change background color on hover */
+}
+
+.social-box:hover a {
+  color: #fff; /* Change icon color on hover */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.char-count {
+  color: #dc3545;
+  font-size: 0.8rem;
+  float: right;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 0;
+}
+
+textarea.form-control {
+  min-height: calc(1.5em + .75rem + calc(var(--bs-border-width)* 100));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  /* Styles for tablets */
+  .box {
+    width: 100px; /* Further reduced width for tablets */
+    font-size: 18px; /* Reduced font size */
+  }
+
+  .countdown {
+    flex-wrap: wrap; /* Wrap boxes to multiple lines */
+    justify-content: center; /* Center boxes horizontally */
+  }
+}
+
+@media (max-width: 576px) {
+  /* Styles for mobile phones */
+  .navbar-toggler {
+    transform: translateX(10%);
+  }
+  .box {
+    width: 80px; /* Even smaller width for phones */
+    font-size: 16px; /* Further reduced font size */
+    margin: 5px; /* Reduced margin */
+  }
+
+  .countdown {
+    margin: 20px 0; /* Reduced margin */
+  }
+}
